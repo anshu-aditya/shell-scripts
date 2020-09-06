@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#reading local and server path for the files
+echo "Enter the location of the file on your Computer:";
+read local_path;
+#echo "Enter the server path for the file:";
+#read server_path;
+
+#creating backUp directory on computer
+dir_path = cd $(eval "echo \"$local_path\"");
+echo "$dir_path";
+
