@@ -18,9 +18,11 @@ read log_operation
  
 	case $log_operation in
 		e)
-		  grep 
-		  ;;
+		   grep -i error $file_location | sort --unique
+		   ;;
 		w)
-		  grep 
-		  ;;
+		   grep -i warn $file_location | sort --unique
+		   ;;
+		*)
+		   echo "operation Not permitted"
 	esac
